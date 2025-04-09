@@ -65,16 +65,21 @@
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item dropdown list-style">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 about us
-                            </a>
+                            </a> -->
                             <ul class="dropdown-menu nav-color" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item dropdown-style" href="#whoWeAre">who we are?</a></li>
                                 <li><a class="dropdown-item dropdown-style" href="#whatWeDo">what we do?</a></li>
                                 <li><a class="dropdown-item dropdown-style" href="#howItWork">how it works?</a></li>
-                                <li><a class="dropdown-item dropdown-style" href="#">external url</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item list-style">
+                            <a class="nav-link" href="#whoWeAre">About Us</a>
+                        </li>
+                        <li class="nav-item list-style">
+                            <a class="nav-link" href="#visionmission">Vision & Mission</a>
                         </li>
                         <li class="nav-item list-style">
                             <a class="nav-link" href="#gallery">gallery</a>
@@ -82,10 +87,6 @@
                         <li class="nav-item list-style">
                             <a class="nav-link" href="#contact">contact</a>
                         </li>
-                        <li class="nav-item list-style">
-                            <a class="nav-link" href="#">external</a>
-                        </li>
-
                     </ul>
                 </div>
             </div>
@@ -355,9 +356,50 @@
             </div>
         </section> -->
 
+        <section id="visionmission" class="visionmission text-white">
+            <div class="ligne"></div>
+            <div class="container">
+                <h2 class="header">Vision & Mission</h2>
+                <div class="content">
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-6">
+                            <h4>Our Vision</h4>
+                            <p>
+                                We are dedicated to equipping our children with the skills, knowledge, and values they need to develop a strong inner voice—empowering them to face the challenges of the twenty-first century with confidence.
+                            </p>
+                            <p>
+                                Our nurturing learning environment is designed to cultivate five key learning minds: the Empathetic Mind, Conscientious Mind, Focused Mind, Analytical Mind, and Inventive Mind—each fostering a unique dimension of growth and understanding. 
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Our Mission</h4>
+                            <p>
+                                We are committed to equipping every child with the skills, knowledge, and values needed to build a strong inner voice—empowering them to navigate the challenges of the twenty-first century with resilience and purpose.
+                              </p>
+                              <p>
+                                Our mission is to create a nurturing and inclusive learning environment that fosters the growth of five essential learning minds:
+                              </p>
+                              <ul>
+                                <li><strong>Empathetic Mind</strong>: to understand and connect with others.</li>
+                                <li><strong>Conscientious Mind</strong>: to act with integrity and responsibility.</li>
+                                <li><strong>Focused Mind</strong>: to maintain clarity and determination.</li>
+                                <li><strong>Analytical Mind</strong>: to think critically and solve problems.</li>
+                                <li><strong>Inventive Mind</strong>: to imagine, create, and innovate.</li>
+                              </ul>
+                              <p>
+                                Through this holistic approach, we aim to shape confident, compassionate, and curious individuals ready to make a meaningful impact in the world.
+                              </p>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
         <section id="gallery" class="lesson">
             <div class="container">
-                <h2 class="section-title">Gallery</h2>
+                <h2 class="header">Gallery</h2>
                 <div class="gallery-grid">
                     <div class="gallery-item"><img src="./images/gallery-01.jpeg" alt="Gallery Image 1"></div>
                     <div class="gallery-item"><img src="./images/gallery-02.jpeg" alt="Gallery Image 2"></div>
@@ -374,17 +416,17 @@
                 </div>
             </div>
         </section>
+  
 
         
         <section id="videos" class="lesson">
             <div class="container">
-                <h2 class="section-title">Videos</h2>
                 <div class="video-grid" style="display: flex; gap: 20px; justify-content: center; align-items: center;">
                     <div class="video-item" style="flex: 1; max-width: 48%;">
                         <div class="video-wrapper" style="position: relative; display: block; cursor: pointer; height: 400px;" onclick="playVideo(this)">
                             <img class="video-thumbnail" src="./images/choose-2.jpg" alt="Video Thumbnail" style="width: 100%; height: 100%; display: block; border-radius: 10px; opacity: 0.7; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 2;">
                             <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.5); border-radius: 50%; padding: 20px; z-index: 3;">
-                                <img src="./images/play.png" alt="Play Button" style="width: 50px; height: 50px;">
+                                <img src="./images/play.png" alt="Play Button" style="width: 50px; height: 50px; filter: brightness(0) invert(1);">
                             </div>
                             <video muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 10px; z-index: 1;">
                                 <source src="./videos/video-1.mp4" type="video/mp4">
@@ -395,7 +437,7 @@
                         <div class="video-wrapper" style="position: relative; display: block; cursor: pointer; height: 400px;" onclick="playVideo(this)">
                             <img class="video-thumbnail" src="./images/choose-3.jpg" alt="Video Thumbnail" style="width: 100%; height: 100%; display: block; border-radius: 10px; opacity: 0.7; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 2;">
                             <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.5); border-radius: 50%; padding: 20px; z-index: 3;">
-                                <img src="./images/play.png" alt="Play Button" style="width: 50px; height: 50px;">
+                                <img src="./images/play.png" alt="Play Button" style="width: 50px; height: 50px; filter: brightness(0) invert(1);">
                             </div>
                             <video muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 10px; z-index: 1;">
                                 <source src="./videos/video-2.mp4" type="video/mp4">
