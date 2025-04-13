@@ -5,6 +5,22 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Mixa Black';
+    src: url('fonts/Mixa-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container.description {
+    font-family: 'Mixa Black', sans-serif;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Vertically center the text and logo */
+}
+
  :root {
     --color-blue: #3CF;
     --color-jaune: #FC3;
